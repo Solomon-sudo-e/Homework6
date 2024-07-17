@@ -3,11 +3,8 @@
 #include <fstream>
 #include <iostream>
 #include <cstdlib>
-#include "doubly_linked_list.h"
+#include "LinkedList.h"
 using namespace std;
-const int NONE = 0;
-const string EMPTY = "-1";
-const string DELETED = "-2";
 
 //-----------------------------------------------------------
 // Define the HashTable class interface
@@ -21,23 +18,24 @@ public:
     ~HashTable();
 
     // Methods
-    bool Insert(Node *dog);
-    bool Search(string breed, string &name);
-    bool Delete(string breed, string name);
+    bool Insert(DogNode *dog);
+    bool Search(string name, string breed);
+    bool Delete(string name, string breed);
     void Print();
     void Print(ofstream & dout);
     void print_collision();
-    void read_file();
+    void read_file(string filename);
+    void print_to_file();
 
 private:
     // Private methods
-    int Hash(string key);
-    int Hash2(string key);
-    int Hash3(string key);
+    size_t Hash(string key);
+    size_t Hash2(string key);
+    size_t Hash3(string key);
 
     // Private data
     int Size;
-    doubly_linked_list *table;
+    LinkedList *table;
     int collision_counter;
 };
 

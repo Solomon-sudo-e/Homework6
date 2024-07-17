@@ -2,36 +2,40 @@
 // Created by Solomon's PC on 7/12/2024.
 //
 
-#include "doubly_linked_list.h"
-doubly_linked_list::doubly_linked_list(): head(nullptr), tail(nullptr) {}
+#include "LinkedList.h"
+LinkedList::LinkedList(): head(nullptr), tail(nullptr) {}
 
-doubly_linked_list::doubly_linked_list(const doubly_linked_list &copy_list) {
+LinkedList::LinkedList(const LinkedList &copy_list) {
     head = copyNodes(copy_list.head);
 }
 
-doubly_linked_list::~doubly_linked_list() {
-    while(head) {
-        Node *temp = head;
-        head = head->getNext();
+
+// Properly destroying linked list, this was my bane of a seg fault for over 45 mins...
+LinkedList::~LinkedList() {
+    DogNode* current = head;
+    while (current) {
+        DogNode* temp = current;
+        current = current->getNext();
         delete temp;
     }
+    head = tail = nullptr;
 }
 
-bool doubly_linked_list::isEmpty() {
+bool LinkedList::isEmpty() {
     return head == nullptr;
 }
 
-Node* doubly_linked_list::getHead() {
+DogNode* LinkedList::getHead() {
     return head;
 }
 
-void doubly_linked_list::setHead(Node* head_node) {
+void LinkedList::setHead(DogNode* head_node) {
     head = head_node;
 }
 
-Node* doubly_linked_list::copyNodes(Node *copied_node) {
+DogNode* LinkedList::copyNodes(DogNode *copied_node) {
     if(!copied_node) return nullptr;
-    Node *copiedNode = new Node(
+    DogNode *copiedNode = new DogNode(
             copied_node->getName(), copied_node->getAge(),
             copied_node->getBreed(), copied_node->getSize(),
             copied_node->getEnergy());
@@ -39,8 +43,8 @@ Node* doubly_linked_list::copyNodes(Node *copied_node) {
     return copied_node;
 }
 
-void doubly_linked_list::printList() {
-    Node* current = head;
+void LinkedList::printList() {
+    DogNode* current = head;
     while(current) {
         cout << current->getName() << ": " << current->getBreed() << " -> ";
         current = current->getNext();
@@ -49,10 +53,12 @@ void doubly_linked_list::printList() {
 }
 
 int evaluate_score(string name) {
+    //I made an array to compare each index, the lower the index the more priority I can give the name for alphabetical order
     char scores[26] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
                        'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
                        'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
+    //Making strings uppercase for more convenient comparisons
     for(int i = 0; i < name.size(); i++) {
         name[i] = toupper(name[i]);
     }
@@ -65,24 +71,28 @@ int evaluate_score(string name) {
     return -1;
 }
 
-void doubly_linked_list::insertSorted(Node *sort_node) {
-    //Base case: if node is null return
-    if (!sort_node) return;
+void LinkedList::insertSorted(DogNode *sort_node) {
+    cout << "Attempting to insert node: " << sort_node->getName() << endl;
 
-    // Getting scores. Lower the score the more priority the Node gets.
+    // Getting scores. Lower the score the more priority the DogNode gets.
     int score = evaluate_score(sort_node->getName());
+    cout << "Score for " << sort_node->getName() << ": " << score << endl;
 
     if (!head) {
-        // If the list is empty I set the new Node as head and tail
+        // If the list is empty I set the new DogNode as head and tail
         head = tail = sort_node;
+        cout << "Inserted as head and tail" << endl;
         return;
     }
 
-    Node* current = head;
+    DogNode* current = head;
     int current_score = evaluate_score(current->getName());
+    cout << "Current head: " << current->getName() << " with score: " << current_score << endl;
 
     // Iterate through and check scores
     while (current && score >= current_score) {
+        cout << "Comparing with: " << current->getName() << " (score: " << current_score << ")" << endl;
+
         if (score > current_score) {
             current = current->getNext();
             if (current) {
@@ -93,11 +103,10 @@ void doubly_linked_list::insertSorted(Node *sort_node) {
             string name_update = sort_node->getName();
             string current_name_update = current->getName();
 
-            //Function to get the minimum, using for clear code as I used a 5 line if else statement last time.
             int min_len = min(name_update.size(), current_name_update.size());
             bool exact_match = true;
 
-            //Iterating through new strings to comapre each name after removing first character.
+            //Iterating through new strings to compare each name after removing first character.
             for (int i = 1; i < min_len; ++i) {
                 char score_char = toupper(name_update[i]);
                 char current_score_char = toupper(current_name_update[i]);
@@ -121,28 +130,35 @@ void doubly_linked_list::insertSorted(Node *sort_node) {
         }
     }
 
-    // Insert the Node, since im using a doubly linked list I have to keep track of tail and head
+    cout << "Insertion position found" << endl;
+
+    // Insert the DogNode, since im using a doubly linked list I have to keep track of tail and head
     if (!current) {
         // Insert at the tail, !current means nullptr.
         tail->setNext(sort_node);
         sort_node->setPrevious(tail);
         tail = sort_node;
+        cout << "Inserted at tail" << endl;
     } else if (current == head) {
         // Insert at the head, best case scenario
         sort_node->setNext(head);
         head->setPrevious(sort_node);
         head = sort_node;
+        cout << "Inserted at head" << endl;
     } else {
         // Insert in the middle.
-        Node* prev = current->getPrevious();
+        DogNode* prev = current->getPrevious();
         prev->setNext(sort_node);
         sort_node->setPrevious(prev);
         sort_node->setNext(current);
         current->setPrevious(sort_node);
+        cout << "Inserted in middle" << endl;
     }
+
+    cout << "DogNode inserted successfully" << endl;
 }
 
-void doubly_linked_list::deleteNode(Node* node) {
+void LinkedList::deleteNode(DogNode* node) {
     if(node == head) {
         head = head->getNext();
         if(head) {
