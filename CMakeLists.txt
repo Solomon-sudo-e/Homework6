@@ -4,5 +4,9 @@ project(dogs)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(dogs main.cpp
-        dog.cpp
-        dog.h)
+        LinkedList.cpp
+        LinkedList.h
+        HashTable.cpp
+        HashTable.h
+        DogNode.cpp
+        DogNode.h)

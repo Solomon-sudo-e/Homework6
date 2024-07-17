@@ -84,10 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/dog.cpp">
+		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/DogNode.cpp">
 			<Option target="dogs"/>
 		</Unit>
-		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/dog.h">
+		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/DogNode.h">
+			<Option target="dogs"/>
+		</Unit>
+		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/HashTable.cpp">
+			<Option target="dogs"/>
+		</Unit>
+		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/HashTable.h">
+			<Option target="dogs"/>
+		</Unit>
+		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/LinkedList.cpp">
+			<Option target="dogs"/>
+		</Unit>
+		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/LinkedList.h">
 			<Option target="dogs"/>
 		</Unit>
 		<Unit filename="C:/Users/Solomon&apos;s PC/CLionProjects/homework1pf2/main.cpp">

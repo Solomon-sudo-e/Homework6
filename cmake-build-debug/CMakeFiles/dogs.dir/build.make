@@ -82,35 +82,67 @@ CMakeFiles/dogs.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dogs.dir/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Solomon's PC\CLionProjects\homework1pf2\main.cpp" -o CMakeFiles\dogs.dir\main.cpp.s
 
-CMakeFiles/dogs.dir/dog.cpp.obj: CMakeFiles/dogs.dir/flags.make
-CMakeFiles/dogs.dir/dog.cpp.obj: C:/Users/Solomon's\ PC/CLionProjects/homework1pf2/dog.cpp
-CMakeFiles/dogs.dir/dog.cpp.obj: CMakeFiles/dogs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Solomon's PC\CLionProjects\homework1pf2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dogs.dir/dog.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dogs.dir/dog.cpp.obj -MF CMakeFiles\dogs.dir\dog.cpp.obj.d -o CMakeFiles\dogs.dir\dog.cpp.obj -c "C:\Users\Solomon's PC\CLionProjects\homework1pf2\dog.cpp"
+CMakeFiles/dogs.dir/LinkedList.cpp.obj: CMakeFiles/dogs.dir/flags.make
+CMakeFiles/dogs.dir/LinkedList.cpp.obj: C:/Users/Solomon's\ PC/CLionProjects/homework1pf2/LinkedList.cpp
+CMakeFiles/dogs.dir/LinkedList.cpp.obj: CMakeFiles/dogs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Solomon's PC\CLionProjects\homework1pf2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dogs.dir/LinkedList.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dogs.dir/LinkedList.cpp.obj -MF CMakeFiles\dogs.dir\LinkedList.cpp.obj.d -o CMakeFiles\dogs.dir\LinkedList.cpp.obj -c "C:\Users\Solomon's PC\CLionProjects\homework1pf2\LinkedList.cpp"
 
-CMakeFiles/dogs.dir/dog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dogs.dir/dog.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Solomon's PC\CLionProjects\homework1pf2\dog.cpp" > CMakeFiles\dogs.dir\dog.cpp.i
+CMakeFiles/dogs.dir/LinkedList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dogs.dir/LinkedList.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Solomon's PC\CLionProjects\homework1pf2\LinkedList.cpp" > CMakeFiles\dogs.dir\LinkedList.cpp.i
 
-CMakeFiles/dogs.dir/dog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dogs.dir/dog.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Solomon's PC\CLionProjects\homework1pf2\dog.cpp" -o CMakeFiles\dogs.dir\dog.cpp.s
+CMakeFiles/dogs.dir/LinkedList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dogs.dir/LinkedList.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Solomon's PC\CLionProjects\homework1pf2\LinkedList.cpp" -o CMakeFiles\dogs.dir\LinkedList.cpp.s
+
+CMakeFiles/dogs.dir/HashTable.cpp.obj: CMakeFiles/dogs.dir/flags.make
+CMakeFiles/dogs.dir/HashTable.cpp.obj: C:/Users/Solomon's\ PC/CLionProjects/homework1pf2/HashTable.cpp
+CMakeFiles/dogs.dir/HashTable.cpp.obj: CMakeFiles/dogs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Solomon's PC\CLionProjects\homework1pf2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dogs.dir/HashTable.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dogs.dir/HashTable.cpp.obj -MF CMakeFiles\dogs.dir\HashTable.cpp.obj.d -o CMakeFiles\dogs.dir\HashTable.cpp.obj -c "C:\Users\Solomon's PC\CLionProjects\homework1pf2\HashTable.cpp"
+
+CMakeFiles/dogs.dir/HashTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dogs.dir/HashTable.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Solomon's PC\CLionProjects\homework1pf2\HashTable.cpp" > CMakeFiles\dogs.dir\HashTable.cpp.i
+
+CMakeFiles/dogs.dir/HashTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dogs.dir/HashTable.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Solomon's PC\CLionProjects\homework1pf2\HashTable.cpp" -o CMakeFiles\dogs.dir\HashTable.cpp.s
+
+CMakeFiles/dogs.dir/DogNode.cpp.obj: CMakeFiles/dogs.dir/flags.make
+CMakeFiles/dogs.dir/DogNode.cpp.obj: C:/Users/Solomon's\ PC/CLionProjects/homework1pf2/DogNode.cpp
+CMakeFiles/dogs.dir/DogNode.cpp.obj: CMakeFiles/dogs.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Solomon's PC\CLionProjects\homework1pf2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dogs.dir/DogNode.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/dogs.dir/DogNode.cpp.obj -MF CMakeFiles\dogs.dir\DogNode.cpp.obj.d -o CMakeFiles\dogs.dir\DogNode.cpp.obj -c "C:\Users\Solomon's PC\CLionProjects\homework1pf2\DogNode.cpp"
+
+CMakeFiles/dogs.dir/DogNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dogs.dir/DogNode.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Solomon's PC\CLionProjects\homework1pf2\DogNode.cpp" > CMakeFiles\dogs.dir\DogNode.cpp.i
+
+CMakeFiles/dogs.dir/DogNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dogs.dir/DogNode.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLion\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Solomon's PC\CLionProjects\homework1pf2\DogNode.cpp" -o CMakeFiles\dogs.dir\DogNode.cpp.s
 
 # Object files for target dogs
 dogs_OBJECTS = \
 "CMakeFiles/dogs.dir/main.cpp.obj" \
-"CMakeFiles/dogs.dir/dog.cpp.obj"
+"CMakeFiles/dogs.dir/LinkedList.cpp.obj" \
+"CMakeFiles/dogs.dir/HashTable.cpp.obj" \
+"CMakeFiles/dogs.dir/DogNode.cpp.obj"
 
 # External object files for target dogs
 dogs_EXTERNAL_OBJECTS =
 
 dogs.exe: CMakeFiles/dogs.dir/main.cpp.obj
-dogs.exe: CMakeFiles/dogs.dir/dog.cpp.obj
+dogs.exe: CMakeFiles/dogs.dir/LinkedList.cpp.obj
+dogs.exe: CMakeFiles/dogs.dir/HashTable.cpp.obj
+dogs.exe: CMakeFiles/dogs.dir/DogNode.cpp.obj
 dogs.exe: CMakeFiles/dogs.dir/build.make
 dogs.exe: CMakeFiles/dogs.dir/linkLibs.rsp
 dogs.exe: CMakeFiles/dogs.dir/objects1.rsp
 dogs.exe: CMakeFiles/dogs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Solomon's PC\CLionProjects\homework1pf2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable dogs.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Solomon's PC\CLionProjects\homework1pf2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable dogs.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\dogs.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

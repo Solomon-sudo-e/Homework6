@@ -128,29 +128,77 @@ dogs/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/build
 .PHONY : dogs/fast
 
-dog.obj: dog.cpp.obj
-.PHONY : dog.obj
+DogNode.obj: DogNode.cpp.obj
+.PHONY : DogNode.obj
 
 # target to build an object file
-dog.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/dog.cpp.obj
-.PHONY : dog.cpp.obj
+DogNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/DogNode.cpp.obj
+.PHONY : DogNode.cpp.obj
 
-dog.i: dog.cpp.i
-.PHONY : dog.i
+DogNode.i: DogNode.cpp.i
+.PHONY : DogNode.i
 
 # target to preprocess a source file
-dog.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/dog.cpp.i
-.PHONY : dog.cpp.i
+DogNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/DogNode.cpp.i
+.PHONY : DogNode.cpp.i
 
-dog.s: dog.cpp.s
-.PHONY : dog.s
+DogNode.s: DogNode.cpp.s
+.PHONY : DogNode.s
 
 # target to generate assembly for a file
-dog.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/dog.cpp.s
-.PHONY : dog.cpp.s
+DogNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/DogNode.cpp.s
+.PHONY : DogNode.cpp.s
+
+HashTable.obj: HashTable.cpp.obj
+.PHONY : HashTable.obj
+
+# target to build an object file
+HashTable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/HashTable.cpp.obj
+.PHONY : HashTable.cpp.obj
+
+HashTable.i: HashTable.cpp.i
+.PHONY : HashTable.i
+
+# target to preprocess a source file
+HashTable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/HashTable.cpp.i
+.PHONY : HashTable.cpp.i
+
+HashTable.s: HashTable.cpp.s
+.PHONY : HashTable.s
+
+# target to generate assembly for a file
+HashTable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/HashTable.cpp.s
+.PHONY : HashTable.cpp.s
+
+LinkedList.obj: LinkedList.cpp.obj
+.PHONY : LinkedList.obj
+
+# target to build an object file
+LinkedList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/LinkedList.cpp.obj
+.PHONY : LinkedList.cpp.obj
+
+LinkedList.i: LinkedList.cpp.i
+.PHONY : LinkedList.i
+
+# target to preprocess a source file
+LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/LinkedList.cpp.i
+.PHONY : LinkedList.cpp.i
+
+LinkedList.s: LinkedList.cpp.s
+.PHONY : LinkedList.s
+
+# target to generate assembly for a file
+LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\dogs.dir\build.make CMakeFiles/dogs.dir/LinkedList.cpp.s
+.PHONY : LinkedList.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -185,9 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... dogs
-	@echo ... dog.obj
-	@echo ... dog.i
-	@echo ... dog.s
+	@echo ... DogNode.obj
+	@echo ... DogNode.i
+	@echo ... DogNode.s
+	@echo ... HashTable.obj
+	@echo ... HashTable.i
+	@echo ... HashTable.s
+	@echo ... LinkedList.obj
+	@echo ... LinkedList.i
+	@echo ... LinkedList.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

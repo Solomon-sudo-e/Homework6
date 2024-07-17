@@ -147,4 +147,7 @@ CMakeFiles/dogs.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  C:/Program\ Files/JetBrains/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  C:/Program\ Files/JetBrains/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
- C:\Users\Solomon's\ PC\CLionProjects\homework1pf2\dog.h
+ C:/Program\ Files/JetBrains/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
+ C:\Users\Solomon's\ PC\CLionProjects\homework1pf2\HashTable.h \
+ C:\Users\Solomon's\ PC\CLionProjects\homework1pf2\LinkedList.h \
+ C:\Users\Solomon's\ PC\CLionProjects\homework1pf2\DogNode.h

@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Solomon's PC/CLionProjects/homework1pf2/dog.cpp" "CMakeFiles/dogs.dir/dog.cpp.obj" "gcc" "CMakeFiles/dogs.dir/dog.cpp.obj.d"
+  "C:/Users/Solomon's PC/CLionProjects/homework1pf2/DogNode.cpp" "CMakeFiles/dogs.dir/DogNode.cpp.obj" "gcc" "CMakeFiles/dogs.dir/DogNode.cpp.obj.d"
+  "C:/Users/Solomon's PC/CLionProjects/homework1pf2/HashTable.cpp" "CMakeFiles/dogs.dir/HashTable.cpp.obj" "gcc" "CMakeFiles/dogs.dir/HashTable.cpp.obj.d"
+  "C:/Users/Solomon's PC/CLionProjects/homework1pf2/LinkedList.cpp" "CMakeFiles/dogs.dir/LinkedList.cpp.obj" "gcc" "CMakeFiles/dogs.dir/LinkedList.cpp.obj.d"
   "C:/Users/Solomon's PC/CLionProjects/homework1pf2/main.cpp" "CMakeFiles/dogs.dir/main.cpp.obj" "gcc" "CMakeFiles/dogs.dir/main.cpp.obj.d"
   )
 

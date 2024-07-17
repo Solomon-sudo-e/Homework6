@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/dogs.dir/dog.cpp.obj"
-  "CMakeFiles/dogs.dir/dog.cpp.obj.d"
+  "CMakeFiles/dogs.dir/DogNode.cpp.obj"
+  "CMakeFiles/dogs.dir/DogNode.cpp.obj.d"
+  "CMakeFiles/dogs.dir/HashTable.cpp.obj"
+  "CMakeFiles/dogs.dir/HashTable.cpp.obj.d"
+  "CMakeFiles/dogs.dir/LinkedList.cpp.obj"
+  "CMakeFiles/dogs.dir/LinkedList.cpp.obj.d"
   "CMakeFiles/dogs.dir/main.cpp.obj"
   "CMakeFiles/dogs.dir/main.cpp.obj.d"
   "dogs.exe"
